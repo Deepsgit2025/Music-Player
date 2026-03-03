@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="music-player">
+
+        <div class="images">
+            <img class="song-img active" src="https://th.bing.com/th/id/OIP.j3DiDF_Tu2hm8BtBdpdvuQHaD3?w=298&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+            <img class="song-img" src="https://th.bing.com/th/id/OIP.vFTnwOqZm_4zJqY-6Bfx2QHaHa?w=167&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+            <img class="song-img" src="https://th.bing.com/th/id/OIP.lVGnyxsOa7oD1mGu4EpkwwHaI-?w=140&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+            <img class="song-img" src="https://th.bing.com/th/id/OIP.xdAeC4I7s6CCwBkYCbojUQHaEK?w=296&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+
+        <h2 class="sn active">Sorry</h2>
+        <h2 class="sn">Senorita</h2>
+        <h2 class="sn">Champion</h2>
+        <h2 class="sn">Blinding</h2>
+
+        <p class="artist active">Justin Bieber</p>
+        <p class="artist">Shawn Mendes</p>
+        <p class="artist">DJ Bravo</p>
+        <p class="artist">Weeknd</p>
+
+        <input type="range" id="progress" min="0" max="100" value="0">
+
+        <div class="controls">
+            <button class="prev">⏮</button>
+            <button class="play">▶</button>
+            <button class="next">⏭</button>
+        </div>
+
+        <audio id="song"></audio>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
